@@ -1,9 +1,11 @@
-﻿namespace LibraryManager.Models
+﻿using RestoranWeb.Models;
+
+namespace LibraryManager.Models
 {
-    public class Borrowing
+    public class Borrowing : SharedModel
     {
-        public int UserId { get; set; }
-        public int BookId { get; set; }
+        public string UserId { get; set; }
+        public string BookId { get; set; }
         public DateTime BorrowDate { get; set; }
         public DateTime ReturnDate { get; set; }
         public User User { get; set; }

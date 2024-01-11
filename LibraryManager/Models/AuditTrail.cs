@@ -1,6 +1,8 @@
-﻿namespace LibraryManager.Models
+﻿using RestoranWeb.Models;
+
+namespace LibraryManager.Models
 {
-    public class AuditTrail
+    public class AuditTrail : SharedModel
     {
         public string Action { get; set; }
         public DateTime Timestamp { get; set; }

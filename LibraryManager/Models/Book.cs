@@ -1,6 +1,8 @@
-﻿namespace LibraryManager.Models
+﻿using RestoranWeb.Models;
+
+namespace LibraryManager.Models
 {
-    public class Book
+    public class Book : SharedModel
     {
         public string Title { get; set; }
         public string Author { get; set; }

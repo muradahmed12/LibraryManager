@@ -1,9 +1,11 @@
-﻿namespace LibraryManager.Models
+﻿using RestoranWeb.Models;
+
+namespace LibraryManager.Models
 {
-    public class Fine
+    public class Fine : SharedModel
     {
-        public int UserId { get; set; }
-        public int BookId { get; set; }
+        public string UserId { get; set; }
+        public string BookId { get; set; }
         public decimal FineAmount { get; set; }
         public DateTime DueDate { get; set; }
         public bool PaidStatus { get; set; }
